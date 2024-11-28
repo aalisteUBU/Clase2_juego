@@ -445,8 +445,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 285,
-						"y": 645,
+						"x": 282,
+						"y": 608,
 						"width": 614.6546475918408,
 						"height": 617.9125344165326,
 						"originX": 0.2659010600706714,
@@ -603,8 +603,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1253,
-						"y": 320,
+						"x": 1239,
+						"y": 331,
 						"width": 150,
 						"height": 22,
 						"originX": 0,
@@ -647,8 +647,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 962,
-						"y": 329,
+						"x": 974,
+						"y": 340,
 						"width": 150,
 						"height": 22,
 						"originX": 0,
@@ -808,6 +808,11 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"DesplazarHasta": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -820,8 +825,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 203,
-						"y": 75,
+						"x": 196,
+						"y": 193,
 						"width": 134.12325301844248,
 						"height": 134.12325301844248,
 						"originX": 0.5,

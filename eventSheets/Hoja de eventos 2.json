@@ -1,0 +1,218 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "VAR_PUNTOS",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 718172472010735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 387099346650972
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 561250803998129,
+					"parameters": {
+						"value": "VAR_PUNTOS"
+					}
+				}
+			],
+			"sid": 776392171847522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 785491462143157
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 481216749826709,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 660728808703516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 884497450556902,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite3",
+					"sid": 663695646444003,
+					"parameters": {
+						"animation": "\"ANI_RUN_R\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 245183672924959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 643734373753026,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite3",
+					"sid": 391840671384661,
+					"parameters": {
+						"animation": "\"ANI_RUN_L\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 529960339582076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 827785513115163,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite3",
+					"sid": 624110697425075,
+					"parameters": {
+						"animation": "\"ANI_JUMP\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 113473472490271
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Teclado",
+					"sid": 141746124506714
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite3",
+					"sid": 575943052257936,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 855723339843615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 876987844733764,
+					"parameters": {
+						"object": "death_limit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Sprite3",
+					"sid": 441831678159711,
+					"parameters": {
+						"x": "203",
+						"y": "75"
+					}
+				}
+			],
+			"sid": 222225221701973
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite3",
+					"sid": 491162864321305,
+					"parameters": {
+						"object": "Rock"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 655784615496609
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Rock",
+					"sid": 800391771696814,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 787573717785274,
+					"parameters": {
+						"variable": "VAR_PUNTOS",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 407957620283874
+		}
+	],
+	"sid": 485341609269391
+}

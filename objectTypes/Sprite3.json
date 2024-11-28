@@ -9,6 +9,11 @@
 			"behaviorId": "Platform",
 			"name": "Plataforma",
 			"sid": 302040186782852
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "DesplazarHasta",
+			"sid": 378648002476639
 		}
 	],
 	"effectTypes": [],
